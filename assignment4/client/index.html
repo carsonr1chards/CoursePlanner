@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Course Planner</title>
+  </head>
+  <body>
+    <div id="top-half">
+      <div id="banner">
+        <div id="header">
+          <h1>Course Planner</h1>
+          <img src="../images/calendar-icon.png" alt="" id="calendar-icon">
+        </div>
+        <div id="user-profile">
+          <button id="profile"><h3>Login</h3><img src="../images/profile.png" alt=""></button>
+        </div>
+      </div>
+      <div id="course-name-field">
+          <input type="text" id="course-name" placeholder="Course Number">
+          <input type="text" id="course-description" placeholder="Course Description">
+          <input type="text" id="professor" placeholder="Professor">
+          <input type="text" id="course-days" placeholder="Days (ex: M,W,F)">
+          <input type="text" id="course-time" placeholder="Time (ex: 09:00-09:50am)">
+          <button id="add-button">Add</button>
+          <button id="confirm-button">Confirm</button>
+          <button id="cancel-button">Cancel</button>
+      </div>
+      <ul id="course-list">
+      </ul>
+      <div id="login">
+        <div id="login-tile">
+          <h2>Login</h2>
+          <input type="text" id="login-email" placeholder="email">
+          <input type="password" id="login-password" placeholder="password">
+          <button id="login-button">Login</button>
+          <p>New user? <button id="signup-switch">Signup</button></p>
+        </div>
+      </div>
+
+    <div id="signup">
+      <div id="signup-tile">
+        <h2>Sign up</h2>
+        <input type="text" id="signup-first-name" placeholder="first name">
+        <input type="text" id="signup-last-name" placeholder="last name">
+        <input type="text" id="signup-email" placeholder="email">
+        <input type="password" id="signup-password" placeholder="password">
+        <button id="signup-button">Signup</button>
+        <p>Already registered? <button id="login-switch">Login</button></p>
+      </div>
+    </div>
+    </div>
+    <!--<h2>Upcoming Assignments</h2>-->
+    <div id="assignment-list"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

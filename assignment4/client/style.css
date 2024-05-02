@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(113, 146, 158) ;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(193, 116, 65);
+}
+
+h2 {
+    text-align: center;
+    padding: 25px;
+}
+
+#top-half {
+    background-image: url("../images/school.jpeg");
+    height: 670px;
+    width: 100%;
+    margin: 0;
+}
+
+#course-name-field {
+    display: flex;
+    margin: 20px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: right;
+    padding-top: 5px;
+}
+
+#course-name, #course-description, #course-days, #course-time, #professor {
+    width: 200px;
+    height: 50px;
+}
+
+#add-button, #confirm-button, #cancel-button {
+    width: 208px;
+    height: 40px;
+    background-color: rgb(212, 229, 233);
+}
+
+#add-button:hover, #confirm-button:hover, #cancel-button:hover {
+    border-color: rgb(193, 116, 65);
+    background-color: rgb(113, 146, 158) ;
+    border-width: 4px;
+}
+
+#course-list {
+    list-style-type: none;
+    text-align: center;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+
+#assignment-list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    /*display: flex;*/
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+#assignment-list li{
+    background-color: rgb(212, 229, 233);
+    border-style: solid;
+    border-width: 2px;
+    width: 150px;
+    padding: 25px;
+    margin: 25px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 7px;
+}
+
+#assignment-list li:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.course {
+    list-style-type: none;
+    background-color: rgb(212, 229, 233);
+    border-style: solid;
+    border-width: 2px;
+    width: 175px;
+    padding: 5px;
+    margin: 25px;
+    height: 150px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.course-name, .course-description {
+    font: bold;
+    font-size: larger;
+}
+
+.course-description{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.course-days, .course-time, .professor{
+    opacity: 0.6;
+}
+
+.course button {
+    display: none;
+
+}
+
+.course:hover button {
+    display: inline;
+    background-color: rgb(212, 229, 233);
+    width: 100px;
+}
+
+.course button:hover{
+    border-color: rgb(193, 116, 65);
+    background-color: rgb(113, 146, 158) ;
+    border-width: 4px;
+}
+
+#confirm-button{
+    display: none;
+}
+
+#cancel-button{
+    display: none;
+}
+
+#calendar-icon{
+    height: 35px;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    grid-column: 2/4;
+    align-items: center;
+}
+
+#banner{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: rgb(193, 116, 65);
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#user-profile{
+    display: flex;
+    text-align: right;
+    padding-right: 25px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding-top: 100px;
+}
+
+#login-tile{
+    display: flex;
+    width: 300px;
+    background-color: rgb(193, 116, 65);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding-top: 100px;
+}
+
+#signup-tile{
+    display: flex;
+    width: 300px;
+    background-color: rgb(193, 116, 65);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#signup-button, #login-button{
+    width: 147px;
+    height: 25px;
+    background-color: rgb(212, 229, 233);
+}
+
+#signup-button:hover, #login-button:hover{
+    border-color: rgb(193, 116, 65);
+    background-color: rgb(113, 146, 158) ;
+    border-width: 4px;
+}
+
+#signup-switch, #login-switch{
+    background-color: rgb(212, 229, 233);
+}
+
+#signup-switch:hover, #login-switch:hover{
+    border-color: rgb(193, 116, 65);
+    background-color: rgb(113, 146, 158) ;
+}
+
+#profile{
+    all: unset;
+    background-color: rgb(193, 116, 65);
+    border-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#profile:hover{
+    text-decoration: underline;
+}
+
+#user-profile img{
+    height: 15px;
+}
